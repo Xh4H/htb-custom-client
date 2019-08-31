@@ -17,9 +17,11 @@ You are now able to respect people directly from the shoutbox. Simply click the 
 
 ### Custom challenge opener
 You are now able to open a challenge directly from the shoutbox
-
 ![](https://i.gyazo.com/4b0f28376a2be926208f55642e9cd103.gif)
 
+### IppSec youtube links in retired machines
+You are now displayed a youtube icon in `Retired Machines` tab next to every single machine. Those who do not have a video made by IppSec are not displayed.
+![](https://i.gyazo.com/d6d95b1b6f28bb4c90659c3a4b2a8cde.gif)
 
 ### Releases
 Releases can be found [here](https://github.com/Xh4H/htb-custom-client/releases).
