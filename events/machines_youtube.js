@@ -1,11 +1,11 @@
+// IppSec youtube icons "plugin"
+
 const youtube = (url) => { return `<a href="https://www.youtube.com/watch?v=${url}"><i class="fab fa-youtube" style="color: #db524b;cursor: pointer;vertical-align: middle;"></i></a> `};
 
 let isActive = false;
 let yt_button, yt_link, retired_button;
-let done = false;
 
 function load_youtube_icons() {
-	if (done) return;
 
 	for (let machine of document.getElementsByClassName("machine-list-item")) {
 		for (let node of machine.childNodes) { // nodes for machine's name
@@ -23,8 +23,6 @@ function load_youtube_icons() {
 			}
 		}
 	}
-
-	done = true;
 }
 
 function action(url) {
