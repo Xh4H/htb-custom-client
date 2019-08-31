@@ -21,5 +21,11 @@ You are now able to open a challenge directly from the shoutbox
 ![](https://i.gyazo.com/4b0f28376a2be926208f55642e9cd103.gif)
 
 
+### Releases
+Releases can be found [here](https://github.com/Xh4H/htb-custom-client/releases).
+
 ### Important
+If you have any ideas, issues... please let me know either via Discord or open up an issue. Pull requests are welcome.
+
+
 Please note, this client does not save any kind of information about the user. Let's maintain the privacy untouched :)
