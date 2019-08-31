@@ -23,6 +23,10 @@ You are now able to open a challenge directly from the shoutbox
 You are now displayed a youtube icon in `Retired Machines` tab next to every single machine. Those who do not have a video made by IppSec are not displayed.
 ![](https://i.gyazo.com/d6d95b1b6f28bb4c90659c3a4b2a8cde.gif)
 
+### Display relevant submissions!
+You are now only displayed those machines and challenges submissions that were not `rejected` or `released`.
+![](https://i.gyazo.com/9d2dd33b468e9265b0f815a7153b7e10.gif)
+
 ### Releases
 Releases can be found [here](https://github.com/Xh4H/htb-custom-client/releases).
 
