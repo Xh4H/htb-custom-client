@@ -66,10 +66,11 @@ function action(url) {
 				if (target.parentNode.parentNode.innerHTML.indexOf("solved challenge") !== -1) { // clicked on a challenge shout
 					let base = target.parentNode.parentNode.childNodes;
 
-					if (!base[4] || !base[6]) return;
+					if (!base[6] || !base[8]) return;
 
-					let challengeName = base[4].innerText;
-					let challengeCategory = base[6].innerText;
+					let challengeName = base[6].innerText;
+					let challengeCategory = base[8].innerText;
+					e.preventDefault();
 					window.location.href = `https://www.hackthebox.eu/home/challenges/${challengeCategory}?challenge=${challengeName}`;
 				}
 			}
