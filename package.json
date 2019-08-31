@@ -2,16 +2,20 @@
   "name": "htb",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
     "discord-rich-presence": "0.0.8",
     "electron": "^5.0.6",
     "sharp": "^0.23.0"
   },
-  "devDependencies": {},
+  "devDependencies": {"electron": "6.0.7"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist",
+    "build-win32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --dist=x32",
+    "build-lin": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=x64",
+    "build-lin32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=ia32"
   },
   "author": "",
   "license": "ISC"
