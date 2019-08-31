@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist",
+    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --dist=x64",
     "build-win32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --dist=x32",
     "build-lin": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=x64",
     "build-lin32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=ia32"
