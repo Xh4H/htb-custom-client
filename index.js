@@ -36,7 +36,8 @@ app.on('ready', function() {
 			webPreferences: {
 				preload: path.join(__dirname, 'preload.js'),
 				nodeIntegration: false
-			}
+			},
+			backgroundColor: "#1e2125"
 		}
 	);
 
