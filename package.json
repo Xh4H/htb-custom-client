@@ -12,10 +12,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --dist=x64",
-    "build-win32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --dist=x32",
-    "build-lin": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=x64",
-    "build-lin32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=ia32"
+    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist/wx64 --platform=win32 --dist=x64 --ignore=dist --asar",
+    "build-win32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist/wx32 --platform=win32 --dist=x32 --ignore=dist --asar",
+    "build-lin": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=x64 --ignore=dist --asar",
+    "build-lin32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=ia32 --ignore=dist --asar"
   },
   "author": "",
   "license": "ISC"
