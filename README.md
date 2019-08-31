@@ -19,3 +19,7 @@ You are now able to respect people directly from the shoutbox. Simply click the 
 You are now able to open a challenge directly from the shoutbox
 
 ![](https://i.gyazo.com/4b0f28376a2be926208f55642e9cd103.gif)
+
+
+### Important
+Please note, this client does not save any kind of information about the user. Let's maintain the privacy untouched :)
