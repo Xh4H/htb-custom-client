@@ -32,7 +32,7 @@ const callback = function(mutationsList, observer) {
 			let innerHTML = newLine.innerHTML;
 			let profile = innerHTML.match(/\<a href\=\"https\:\/\/www.hackthebox.eu\/home\/users\/profile\/(\d+)\">\w+\<\/a\>/);
 
-			if (!profile) return;
+			if (!profile) break;
 			
 			let profileMatch = profile[0]; // capture the entire match
 			let profileID = profile[1]; // capture ID
