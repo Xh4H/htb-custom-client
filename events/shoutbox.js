@@ -70,8 +70,11 @@ function action(url) {
 
 					let challengeName = base[6].innerText;
 					let challengeCategory = base[8].innerText;
-					e.preventDefault();
-					window.location.href = `https://www.hackthebox.eu/home/challenges/${challengeCategory}?challenge=${challengeName}`;
+
+					if (!challengeName.includes("[")) {
+						e.preventDefault();
+						window.location.href = `https://www.hackthebox.eu/home/challenges/${challengeCategory}?challenge=${challengeName}`;
+					}
 				}
 			}
 		}, false);
