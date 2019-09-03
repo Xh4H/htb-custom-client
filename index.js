@@ -45,7 +45,11 @@ app.on('ready', function() {
 	mainWindow.setRepresentedFilename(__dirname + "/images/htbicon.jpg");
 	mainWindow.loadURL('https://hackthebox.eu/home/');
 	//mainWindow.loadURL('https://www.hackthebox.eu/home/challenges/Pwn?challenge=ropmev2');
-	//mainWindow.webContents.openDevTools();
+
+	if (process.argv[2] == "dev") {
+		mainWindow.webContents.openDevTools();
+	}
+	
 });
 
 module.exports = {update: HTB_RPC.updateActivity}
