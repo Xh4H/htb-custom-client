@@ -1,5 +1,5 @@
 {
-  "name": "htb",
+  "name": "HackTheBox Client",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,6 @@
     "build-lin32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=ia32 --ignore=dist --asar",
     "build-mac": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=darwin --ignore=dist --asar"
   },
-  "author": "",
+  "author": "Xh4H",
   "license": "ISC"
 }
