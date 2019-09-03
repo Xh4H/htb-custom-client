@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.19.0",
     "discord-rich-presence": "0.0.8",
     "electron": "^5.0.6",
     "sharp": "^0.23.0"
   },
-  "devDependencies": {"electron": "6.0.7"},
+  "devDependencies": {
+    "electron": "6.0.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron . dev",
-    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist/wx64 --platform=win32 --arch=x64 --ignore=dist --asar",
-    "build-win32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist/wx32 --platform=win32 --arch=ia32 --ignore=dist --asar",
+    "build-win": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=win32 --arch=x64 --ignore=dist --asar",
+    "build-win32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=win32 --arch=ia32 --ignore=dist --asar",
     "build-lin": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=x64 --ignore=dist --asar",
     "build-lin32": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=linux --arch=ia32 --ignore=dist --asar",
     "build-mac": "electron-packager . --icon=images/htbicon.ico --overwrite --out=dist --platform=darwin --ignore=dist --asar"
