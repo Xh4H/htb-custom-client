@@ -2,6 +2,7 @@ const axios = require('axios');
 let req = axios.get("https://raw.githubusercontent.com/Xh4H/htb-custom-client/master/custom_dependencies/ippsec_videos.json");
 
 // Custom events
+const discord_verification = require("./events/discord_verification");
 const challenge_opener = require("./events/challenge_opener");
 const machines_discord = require("./events/machines_discord");
 const machines_youtube = require("./events/machines_youtube");
@@ -9,7 +10,14 @@ const shoutbox = require("./events/shoutbox");
 const hide = require("./events/hide");
 
 // window configs
-let actions = [shoutbox, challenge_opener, machines_discord, machines_youtube, hide];
+let actions = [
+	discord_verification,
+	challenge_opener,
+	machines_discord,
+	machines_youtube,
+	shoutbox,
+	hide
+];
 
 function startActions(url) {
 	actions.forEach(action => action(url));
