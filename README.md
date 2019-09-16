@@ -17,7 +17,7 @@ A: As of now, I need to attach a script on Discord's boot in order to grab the a
 
 Q: What do I need to do?
 A: Download [this script](https://github.com/Xh4H/htb-custom-client/blob/master/custom_dependencies/discord.js) in your computer. Add (or edit if exists already) the following system variable: NODE_OPTIONS. Assing the following value: **--require </path/to/downloaded_script.js>**. Restart discord and you are done.
-![](https://i.imgur.com/dx4mXdU.gifv)
+![](https://i.imgur.com/dx4mXdU.gif)
 
 ### Activity show off!
 You are now able to use Discord Rich Presence to show the latest machine you are working on.
