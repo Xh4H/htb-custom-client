@@ -1,7 +1,7 @@
 // Machine discord "plugin"
 
 const electron = require('electron');
-const update = electron.remote.require('./main').update;
+const update = electron.remote.require('./index').update;
 
 function action(url) {
 	// Check if we are inside a machine profile
