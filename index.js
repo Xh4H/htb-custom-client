@@ -1,4 +1,5 @@
 const HTB_RPC = require("./custom_dependencies/HTB_RPC");
+const Discord = require("./custom_dependencies/DiscordIntegration");
 const electron = require('electron');
 const path = require("path");
 const app = electron.app;
@@ -30,7 +31,7 @@ app.on('ready', function() {
 		{	
 			//x: externalDisplay.bounds.x + 100,
 			//y: externalDisplay.bounds.y + 20,
-			width: 1250,
+			width: 1300,
 			height: 1000,
 			icon: __dirname + "/images/htbicon.ico",
 			webPreferences: {
@@ -44,7 +45,6 @@ app.on('ready', function() {
 	mainWindow.setMenuBarVisibility(false);
 	mainWindow.setRepresentedFilename(__dirname + "/images/htbicon.jpg");
 	mainWindow.loadURL('https://hackthebox.eu/home/');
-	//mainWindow.loadURL('https://www.hackthebox.eu/home/challenges/Pwn?challenge=ropmev2');
 
 	if (process.argv[2] == "dev") {
 		mainWindow.webContents.openDevTools();
@@ -52,4 +52,4 @@ app.on('ready', function() {
 	
 });
 
-module.exports = {update: HTB_RPC.updateActivity}
+module.exports = {update: HTB_RPC.updateActivity, discord: new Discord()}
