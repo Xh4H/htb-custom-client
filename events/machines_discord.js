@@ -11,7 +11,7 @@ function action(url) {
 		// ["home/machines/profile/204", "204", index: 1, input: "/home/machines/profile/204", groups: undefined]
 		machineID = machineID[1];
 
-		let machineName = document.getElementsByClassName("m-n")[0].innerText;
+		let machineName = document.getElementsByClassName("m-n")[0].innerText.trim();
 		let machineOwner;
 		for (const el of document.getElementsByClassName("no-margins")) {
 			if (el.innerHTML.indexOf("profile/") !== -1) {
