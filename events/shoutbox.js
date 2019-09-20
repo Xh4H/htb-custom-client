@@ -7,6 +7,7 @@ function loadEdits() {
 	// Add respect button to every user in the shoutbox
 	let shouts = document.getElementById("shouts");
 	for (const shout of shouts.childNodes) {
+		if (!shout.innerHTML) continue;
 
 		let profile = shout.innerHTML.match(/\<a href\=\"https\:\/\/www.hackthebox.eu\/home\/users\/profile\/(\d+)\">\w+\<\/a\>/);
 
