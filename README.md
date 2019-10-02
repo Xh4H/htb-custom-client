@@ -6,6 +6,10 @@
   <img src="https://forthebadge.com/images/badges/gluten-free.svg"/>
 </p>
 
+# Project discontinued
+Thanks for using this tool, I am now discontinuing it since I am working for HackTheBox now and will be adapting these features.
+
+Love!
 ## Added functionalities
 
 ### (NEW) Discord account verification
